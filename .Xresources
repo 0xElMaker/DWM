@@ -1,0 +1,22 @@
+! خلفية سوداء ونص أبيض للتطبيقات X11
+XTerm*background: #000000
+XTerm*foreground: #FFFFFF
+XTerm*cursorColor: #FFFFFF
+
+! ألوان 16 الأساسية (اختياري)
+XTerm*color0: #000000
+XTerm*color1: #FFFFFF
+XTerm*color2: #FFFFFF
+XTerm*color3: #FFFFFF
+XTerm*color4: #FFFFFF
+XTerm*color5: #FFFFFF
+XTerm*color6: #FFFFFF
+XTerm*color7: #FFFFFF
+XTerm*color8: #000000
+XTerm*color9: #FFFFFF
+XTerm*color10: #FFFFFF
+XTerm*color11: #FFFFFF
+XTerm*color12: #FFFFFF
+XTerm*color13: #FFFFFF
+XTerm*color14: #FFFFFF
+XTerm*color15: #FFFFFF
