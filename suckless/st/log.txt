@@ -1,0 +1,70 @@
+patching file Makefile
+patching file config.def.h
+Hunk #1 succeeded at 8 with fuzz 2.
+Hunk #3 succeeded at 174 (offset 3 lines).
+Hunk #4 FAILED at 200.
+Hunk #5 succeeded at 218 (offset 5 lines).
+Hunk #6 FAILED at 227.
+2 out of 6 hunks FAILED -- saving rejects to file config.def.h.rej
+patching file config.mk
+patching file graphics.c
+patching file graphics.h
+patching file icat-mini.sh
+patching file khash.h
+patching file kvec.h
+patching file rowcolumn_diacritics_helpers.c
+patching file st.c
+Hunk #2 succeeded at 38 with fuzz 2 (offset 1 line).
+Hunk #3 succeeded at 122 with fuzz 1 (offset 4 lines).
+Hunk #4 succeeded at 227 (offset 7 lines).
+Hunk #5 succeeded at 245 (offset 7 lines).
+Hunk #6 succeeded at 633 (offset 7 lines).
+Hunk #7 succeeded at 842 (offset 7 lines).
+Hunk #8 succeeded at 858 (offset 7 lines).
+Hunk #9 succeeded at 921 (offset 10 lines).
+Hunk #10 succeeded at 930 (offset 10 lines).
+Hunk #11 succeeded at 974 (offset 10 lines).
+Hunk #12 succeeded at 1071 (offset 10 lines).
+Hunk #13 succeeded at 1095 (offset 10 lines).
+Hunk #14 succeeded at 1331 (offset 67 lines).
+Hunk #15 succeeded at 1375 (offset 67 lines).
+Hunk #16 succeeded at 1591 (offset 67 lines).
+Hunk #17 succeeded at 1604 (offset 67 lines).
+Hunk #18 succeeded at 1641 (offset 67 lines).
+Hunk #19 succeeded at 1675 with fuzz 2 (offset 73 lines).
+Hunk #20 succeeded at 2069 (offset 77 lines).
+Hunk #21 succeeded at 2264 (offset 90 lines).
+Hunk #22 succeeded at 2789 (offset 90 lines).
+Hunk #23 succeeded at 2990 (offset 98 lines).
+Hunk #24 succeeded at 2999 with fuzz 2 (offset 98 lines).
+Hunk #25 succeeded at 3036 (offset 99 lines).
+patching file st.h
+Hunk #6 succeeded at 123 (offset 4 lines).
+Hunk #7 succeeded at 144 (offset 4 lines).
+patching file st.info
+patching file win.h
+patching file x.c
+Hunk #3 succeeded at 63 (offset 1 line).
+Hunk #4 succeeded at 91 (offset 1 line).
+Hunk #5 succeeded at 157 (offset 3 lines).
+Hunk #6 succeeded at 235 (offset 3 lines).
+Hunk #7 succeeded at 344 (offset 3 lines).
+Hunk #8 succeeded at 417 (offset 3 lines).
+Hunk #9 succeeded at 530 (offset 3 lines).
+Hunk #10 succeeded at 821 (offset 4 lines).
+Hunk #11 succeeded at 982 (offset 32 lines).
+Hunk #12 succeeded at 1127 (offset 32 lines).
+Hunk #13 succeeded at 1138 (offset 32 lines).
+Hunk #14 succeeded at 1280 (offset 46 lines).
+Hunk #15 succeeded at 1368 (offset 46 lines).
+Hunk #16 succeeded at 1398 (offset 46 lines).
+Hunk #17 succeeded at 1510 (offset 46 lines).
+Hunk #18 succeeded at 1654 (offset 46 lines).
+Hunk #19 succeeded at 1677 (offset 46 lines).
+Hunk #20 succeeded at 1753 (offset 46 lines).
+Hunk #21 succeeded at 1773 (offset 46 lines).
+Hunk #22 succeeded at 1817 (offset 46 lines).
+Hunk #23 succeeded at 2044 (offset 46 lines).
+Hunk #24 succeeded at 2058 (offset 46 lines).
+Hunk #25 succeeded at 2284 (offset 46 lines).
+Hunk #26 succeeded at 2335 (offset 46 lines).
