@@ -1,0 +1,1 @@
+/home/maker/.cache/wal/colors-wal-dwm.h
