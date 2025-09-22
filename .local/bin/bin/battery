@@ -1,0 +1,59 @@
+#!/bin/bash
+
+BAT_PATH="/sys/class/power_supply/BAT0"
+
+if [ ! -d "$BAT_PATH" ]; then
+  echo "󱉝 No Battery"
+  exit 0
+fi
+
+PERC=$(cat $BAT_PATH/capacity)
+STATUS=$(cat $BAT_PATH/status)
+
+if [ "$STATUS" = "Charging" ]; then
+  if [ "$PERC" -le 10 ]; then
+    ICON="󰢟"
+  elif [ "$PERC" -le 20 ]; then
+    ICON="󰢜"
+  elif [ "$PERC" -le 30 ]; then
+    ICON="󰂆"
+  elif [ "$PERC" -le 40 ]; then
+    ICON="󰂇"
+  elif [ "$PERC" -le 50 ]; then
+    ICON="󰂈"
+  elif [ "$PERC" -le 60 ]; then
+    ICON="󰢝"
+  elif [ "$PERC" -le 70 ]; then
+    ICON="󰂉"
+  elif [ "$PERC" -le 80 ]; then
+    ICON="󰢞"
+  elif [ "$PERC" -le 90 ]; then
+    ICON="󰂊"
+  else
+    ICON="󰂅"
+  fi
+else
+  if [ "$PERC" -le 10 ]; then
+    ICON="󰂎"
+  elif [ "$PERC" -le 20 ]; then
+    ICON="󰁺"
+  elif [ "$PERC" -le 30 ]; then
+    ICON="󰁼"
+  elif [ "$PERC" -le 40 ]; then
+    ICON="󰁽"
+  elif [ "$PERC" -le 50 ]; then
+    ICON="󰁾"
+  elif [ "$PERC" -le 60 ]; then
+    ICON="󰁿"
+  elif [ "$PERC" -le 70 ]; then
+    ICON="󰂀"
+  elif [ "$PERC" -le 80 ]; then
+    ICON="󰂁"
+  elif [ "$PERC" -le 90 ]; then
+    ICON="󰂂"
+  else
+    ICON="󰁹"
+  fi
+fi
+
+echo "$ICON $PERC%"

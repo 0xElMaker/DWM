@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# create Videos directory if it doesn't exist
+mkdir -p ~/Videos
+
+# output filename with date and time
+OUTPUT="$HOME/Videos/record_$(date +%Y-%m-%d_%H-%M-%S).mp4"
+
+# get screen resolution
+RESOLUTION=$(xdpyinfo | grep dimensions | awk '{print $2}')
+
+# audio source (PulseAudio)
+AUDIO_SOURCE="AUDIO_SOURCE="alsa_output.pci-0000_00_1b.0.analog-stereo.monitor""
+
+# start recording
+echo "Recording started... Press [CTRL+C] to stop."
+ffmpeg -video_size $RESOLUTION -framerate 30 -f x11grab -i $DISPLAY \
+       -f pulse -i $AUDIO_SOURCE \
+       -c:v libx264 -preset ultrafast -crf 23 \
+       -c:a aac "$OUTPUT"
+
+echo "Recording saved to $OUTPUT"
