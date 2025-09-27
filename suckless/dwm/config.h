@@ -156,16 +156,15 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-  TAGKEYS(                        XK_ampersand,              0)  // &
-  TAGKEYS(                        XK_eacute,                 1)  // é
-  TAGKEYS(                        XK_quotedbl,               2)  // "
-  TAGKEYS(                        XK_apostrophe,             3)  // '
-  TAGKEYS(                        XK_parenleft,              4)  // (
-  TAGKEYS(                        XK_section,                5)  // §
-  TAGKEYS(                        XK_egrave,                 6)  // è
-  TAGKEYS(                        XK_exclam,                 7)  // !
-  TAGKEYS(                        XK_ccedilla,               8)  // ç
-  TAGKEYS(                        XK_agrave,                 9)  // à
+	TAGKEYS(                        XK_1,                      0)
+	TAGKEYS(                        XK_2,                      1)
+	TAGKEYS(                        XK_3,                      2)
+	TAGKEYS(                        XK_4,                      3)
+	TAGKEYS(                        XK_5,                      4)
+	TAGKEYS(                        XK_6,                      5)
+	TAGKEYS(                        XK_7,                      6)
+	TAGKEYS(                        XK_8,                      7)
+	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
   { MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} },
   { 0,         XF86XK_AudioLowerVolume,       spawn,                 {.v = decvol} },
