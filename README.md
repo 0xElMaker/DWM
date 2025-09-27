@@ -7,6 +7,7 @@
   <br>
   <img src="image.png" alt="Preview 1" />
   <img src="image2.png" alt="Preview 2" />
+  <img src="image3.png" alt="Preview 3" />
 </details>
 
 ---
