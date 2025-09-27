@@ -1,30 +1,36 @@
 <div align="center">
-<h1>My DWM Rice</h1>
-
-![Preview](image.png)
-
-![Preview](image2.png)
-
-<h2>DWM</h2>
-
+  <h1>My DWM Rice</h1>
 </div>
 
-- Better fullscreen
-- Floating window centering
-- Picom Animations Smooth
-- transparency
-- st kitty image protocol
-- scrollback
-- minimal RAM usage
-- Nice Dmenu app luncher
-- VanityGaps
-- Tile Move
-- Fastfetch rice
-- Full Neovim configuration with LSP, remaps, theme and plugins
-- Picom configuration
-- 19 Patch
+<details>
+  <summary>📷 Preview (click to expand)</summary>
+  <br>
+  <img src="image.png" alt="Preview 1" />
+  <img src="image2.png" alt="Preview 2" />
+</details>
 
-## Keybindings
+---
+
+<h2>✨ Features</h2>
+
+- Better fullscreen  
+- Floating window centering  
+- Smooth Picom animations  
+- Transparency  
+- ST + Kitty image protocol  
+- Scrollback support  
+- Minimal RAM usage  
+- Nice Dmenu app launcher  
+- VanityGaps  
+- Tile Move  
+- Fastfetch rice  
+- Full Neovim configuration (LSP, remaps, theme, plugins)  
+- Picom configuration  
+- 19 patches  
+
+---
+
+## ⌨️ Keybindings
 
 | Keybinding                  | Action                                  |
 |-----------------------------|------------------------------------------|
