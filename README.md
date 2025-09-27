@@ -8,7 +8,11 @@
   <img src="image.png" alt="Preview 1" />
   <img src="image2.png" alt="Preview 2" />
   <img src="image3.png" alt="Preview 3" />
+  <summary>🎥 Video Preview (click to expand)</summary>
+  <br>
+  <video src="video.mp4" controls width="600"></video>
 </details>
+
 
 ---
 
