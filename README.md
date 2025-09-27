@@ -12,7 +12,7 @@
 <details>
   <summary>🎥 Video Preview (click to expand)</summary>
   <br>
-  <video src="video.mp4"></video>
+  <video src="video.mp4" controls width="766"></video>
 </details>
 
 
