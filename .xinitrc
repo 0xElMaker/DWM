@@ -1,18 +1,21 @@
 #!/bin/sh
 
 # Keyboard layout
-setxkbmap -layout fr,ara -option 'grp:ctrl_space_toggle'
+setxkbmap -layout us,ara -option 'grp:ctrl_space_toggle'
 
 # Set wallpaper
-feh --bg-scale ~/wallpaper/wallhaven-d8p7w3_3840x2160.png &
+~/.local/bin/random_wall.sh &
 
 # Sound fix
 /usr/bin/pipewire &
 /usr/bin/pipewire-pulse &
 /usr/bin/wireplumber &
 
-#Start MPD daemon
+# Start MPD daemon
 mpd &
+
+# Start Dunst
+dunst &
 
 # Start Bars
 slstatus &
@@ -20,6 +23,9 @@ slstatus &
 # Start compositor
 picom &
 
+# Fix session
+export XDG_SESSION_TYPE=x11
+export DESKTOP_SESSION=dwm
+
 # Start window manager
 exec dwm
-
