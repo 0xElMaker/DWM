@@ -16,6 +16,7 @@
 ```bash
 sudo pacman -S nvim picom gtk3 mpd pipewire pipewire-pulse wireplumber dunst \
 xorg-xinit flameshot xcolor thunar zsh
+```
 ضض
 
 ---
