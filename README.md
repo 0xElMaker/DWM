@@ -17,8 +17,10 @@
 sudo pacman -S nvim picom gtk3 mpd pipewire pipewire-pulse wireplumber dunst \
 xorg-xinit flameshot xcolor thunar zsh
 ```
-ضض
+```bash
+yay -S fira-code-nerd-fonts jetbrains-mono oh-my-zsh-git yazi
 
+```
 ---
 
 <h2>✨ Features</h2>
