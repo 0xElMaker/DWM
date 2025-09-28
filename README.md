@@ -9,7 +9,14 @@
   <img src="image2.png" alt="Preview 2" />
   <img src="image3.png" alt="Preview 3" />
 </details>
+---
 
+## 📦 Install Requirements
+
+```bash
+sudo pacman -S nvim picom gtk3 mpd pipewire pipewire-pulse wireplumber dunst \
+xorg-xinit flameshot xcolor thunar zsh
+ضض
 
 ---
 
