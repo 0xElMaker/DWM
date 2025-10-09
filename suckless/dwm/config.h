@@ -52,20 +52,20 @@ static const int refreshrate = 120;  /* refresh rate (per second) for client mov
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "[M]",      monocle },
-	{ "[@]",      spiral },
-	{ "[\\]",     dwindle },
-	{ "H[]",      deck },
-	{ "TTT",      bstack },
-	{ "===",      bstackhoriz },
-	{ "HHH",      grid },
-	{ "###",      nrowgrid },
-	{ "---",      horizgrid },
-	{ ":::",      gaplessgrid },
-	{ "|M|",      centeredmaster },
-	{ ">M>",      centeredfloatingmaster },
-	{ "><>",      NULL },    /* no layout function means floating behavior */
+	{ "󰽙",      tile },    /* first entry is default */
+	{ "󰍉 ",      monocle },
+	{ "󱍸" ,      spiral },
+	{ "󰪏" ,     dwindle },
+	{ "󰘸",      deck },
+	{ "󱕕",      bstack },
+	{ "",      bstackhoriz },
+	{ "󰕰" ,      grid },
+	{ "󰾍",      nrowgrid },
+	{ "󰝘",      horizgrid },
+	{ "󱗼",      gaplessgrid },
+	{ "󱒅",      centeredmaster },
+	{ "󱒆",      centeredfloatingmaster },
+	{ "",      NULL },    /* no layout function means floating behavior */
 	{ NULL,       NULL },
 };
 
@@ -85,6 +85,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-l", "15", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
 static const char *powermenu[] = { "/home/maker/.local/bin/powermenu", NULL };
 static const char *termcmd[]  = { "st", NULL };
+static const char *layoutmenu_cmd = "layoutmenu.sh";
 static const char *incvol[] = {"/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL};
 static const char *decvol[] = {"/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL};
 static const char *mutevol[] = {"/usr/bin/pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL};
@@ -147,7 +148,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[11]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
@@ -158,16 +159,15 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-  TAGKEYS(                        XK_1,              0)  // &
-  TAGKEYS(                        XK_2,                 1)  // é
-  TAGKEYS(                        XK_3,               2)  // "
-  TAGKEYS(                        XK_4,             3)  // '
-  TAGKEYS(                        XK_5,              4)  // (
-  TAGKEYS(                        XK_6,                5)  // §
-  TAGKEYS(                        XK_7,                 6)  // è
-  TAGKEYS(                        XK_8,                 7)  // !
-  TAGKEYS(                        XK_9,               8)  // ç
-  TAGKEYS(                        XK_10,                 9)  // à
+	TAGKEYS(                        XK_1,                      0)
+	TAGKEYS(                        XK_2,                      1)
+	TAGKEYS(                        XK_3,                      2)
+	TAGKEYS(                        XK_4,                      3)
+	TAGKEYS(                        XK_5,                      4)
+	TAGKEYS(                        XK_6,                      5)
+	TAGKEYS(                        XK_7,                      6)
+	TAGKEYS(                        XK_8,                      7)
+	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
   { MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} },
   { 0,         XF86XK_AudioLowerVolume,       spawn,                 {.v = decvol} },
@@ -181,8 +181,8 @@ static const Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkButton,		0,		Button1,	spawn,		{.v = dmenucmd } },
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
-	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
-  { ClkRootWin,           0,              Button3,        spawn,          SHCMD("sh ~/suckless/xmenu/xmenu.sh") },
+  { ClkLtSymbol,          0,              Button3,        layoutmenu,     {0} },
+  { ClkRootWin,           0,              Button3,        spawn,          SHCMD("sh /home/maker/myDWM/xmenu/xmenu.sh") },
   { ClkWinTitle,          0,              Button2,        zoom,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
